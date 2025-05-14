@@ -227,7 +227,7 @@ const Hero = ({ searchQuery }) => {
           <button
             onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
             disabled={currentPage === 1}
-            className=" cursor-pointer px-3 py-1 md:px-4 md:py-2 rounded-md md:rounded-lg bg-gray-900/80 border border-gray-700/50 text-cyan-300 text-xs md:text-sm hover:bg-gray-900/60 transition-colors disabled:opacity-50"
+            className=" cursor-pointer px-3 py-1 md:px-4 md:py-2 rounded-md md:rounded-lg bg-gray-900/80 border border-gray-700/50 text-white text-xs md:text-sm hover:bg-gray-900/60 transition-colors disabled:opacity-50"
           >
             Previous
           </button>
@@ -238,8 +238,8 @@ const Hero = ({ searchQuery }) => {
               onClick={() => setCurrentPage(page)}
               className={` cursor-pointer px-3 py-1 md:px-4 md:py-2 rounded-md md:rounded-lg text-xs md:text-sm ${
                 page === currentPage
-                  ? "bg-cyan-400/30 text-cyan-300"
-                  : "bg-gray-900/80 text-cyan-300 hover:bg-gray-900/60"}`}>
+                  ? "bg-cyan-400/30 text-black"
+                  : "bg-gray-900/80 text-white hover:bg-gray-900/60"}`}>
                     {page}
             </button>
           ))}
@@ -247,7 +247,7 @@ const Hero = ({ searchQuery }) => {
             <button
             onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
             disabled={currentPage === totalPages}
-            className=" px-3 py-1 md:px-4 md:py-2 rounded-md md:rounded-lg bg-gray-900/80 border border-gray-700/50 text-cyan-300 text-xs md:text-sm hover:bg-gray-900/60 transition-colors disabled:opacity-50 cursor-pointer"
+            className=" px-3 py-1 md:px-4 md:py-2 rounded-md md:rounded-lg bg-gray-900/80 border border-gray-700/50 text-white text-xs md:text-sm hover:bg-gray-900/60 transition-colors disabled:opacity-50 cursor-pointer"
           >
             Next 
           </button>
