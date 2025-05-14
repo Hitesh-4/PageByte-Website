@@ -90,11 +90,11 @@ const Navbar = ({handelSearch}) => {
           <div className="flex items-center space-x-4 order-2 md:order-3 ml-auto md:ml-0">
             <button className="relative p-1 group hover:scale-105 transition-transform">
               <div className="relative flex items-center justify-center h-8 w-8 md:h-10 md:w-10 rounded-full bg-gray-900/90 border-2 border-cyan-300/20  backdrop-blur-sm overflow-hidden ">
-                <span className="text-lg md:text-xl animate-holo">
-                  &#128220;
+                <span className="text-lg md:text-xl animate-holo text-blue-500">
+                  &#xf2bd;
                 </span>
               </div>
-              <div className="absolute -top-0.5 -right-0.5 h-1 w-1 md:h-3 md:w-3 bg-blue-600 rounded-full shadow-glow-pulse" />
+              {/* <div className="absolute -top-0.5 -right-0.5 h-1 w-1 md:h-3 md:w-3 bg-green-600 rounded-full shadow-glow-pulse" /> */}
             </button>
           </div>
         </div>
