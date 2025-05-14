@@ -94,7 +94,6 @@ const Navbar = ({handelSearch}) => {
                   &#xf2bd;
                 </span>
               </div>
-              {/* <div className="absolute -top-0.5 -right-0.5 h-1 w-1 md:h-3 md:w-3 bg-green-600 rounded-full shadow-glow-pulse" /> */}
             </button>
           </div>
         </div>
