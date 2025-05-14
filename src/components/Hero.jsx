@@ -105,9 +105,10 @@ const Hero = ({ searchQuery }) => {
   }
 
   return (
-    <div className=" min-h-screen pt-10 md:pt-12 bg-gradient-to-tr from-gray-600 to-gray-900/90 p-4 sm:p-6 md:p-8">
+    <div className=" min-h-screen pt-10 md:pt-12 bg-gray-100 p-4 sm:p-6 md:p-8">
       <div className=" max-w-7xl mx-auto">
-        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+      <h1 className="text-4xl font-bold text-center mb-6">Books</h1>
+        <div className=" grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
           {paginatedBooks.map((book, index) => {
             if (book.dummy) {
               return (
@@ -123,7 +124,7 @@ const Hero = ({ searchQuery }) => {
               <div
                 id="hero"
                 key={book.id} 
-                className=" relative bg-gray-800/30 rounded-xl md:rounded-2xl backdrop-blur-xl border border-white/10 hover:border-cyan-400/30 transition-all duration-300 hover:-translate-y-1 md:hover:-translate-y-2 shadow-lg hover:shadow-xl md:shadow-2xl hover:shadow-cyan-400/10"
+                className=" relative bg-gray-500 rounded-xl md:rounded-2xl backdrop-blur-xl border border-white/10 hover:border-cyan-400/30 transition-all duration-300 hover:-translate-y-1 md:hover:-translate-y-2 shadow-lg hover:shadow-xl md:shadow-2xl hover:shadow-cyan-400/10"
               >
                 <a
                   href={book.infoLink}
@@ -222,11 +223,11 @@ const Hero = ({ searchQuery }) => {
           })}
         </div>
 
-        <div className=" mt-6 md:mt-8 flex flex-wrap justify-center items-center gap-2 md:gap-3">
+        <div className=" mt-6 md:mt-8 flex flex-wrap justify-center items-center gap-2 md:gap-3 cursor-pointer">
           <button
             onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
             disabled={currentPage === 1}
-            className=" px-3 py-1 md:px-4 md:py-2 rounded-md md:rounded-lg bg-gray-900/80 border border-gray-700/50 text-cyan-300 text-xs md:text-sm hover:bg-gray-900/60 transition-colors disabled:opacity-50"
+            className=" cursor-pointer px-3 py-1 md:px-4 md:py-2 rounded-md md:rounded-lg bg-gray-900/80 border border-gray-700/50 text-cyan-300 text-xs md:text-sm hover:bg-gray-900/60 transition-colors disabled:opacity-50"
           >
             Previous
           </button>
@@ -235,7 +236,7 @@ const Hero = ({ searchQuery }) => {
             <button
               key={index}
               onClick={() => setCurrentPage(page)}
-              className={` px-3 py-1 md:px-4 md:py-2 rounded-md md:rounded-lg text-xs md:text-sm ${
+              className={` cursor-pointer px-3 py-1 md:px-4 md:py-2 rounded-md md:rounded-lg text-xs md:text-sm ${
                 page === currentPage
                   ? "bg-cyan-400/30 text-cyan-300"
                   : "bg-gray-900/80 text-cyan-300 hover:bg-gray-900/60"}`}>
@@ -246,7 +247,7 @@ const Hero = ({ searchQuery }) => {
             <button
             onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
             disabled={currentPage === totalPages}
-            className=" px-3 py-1 md:px-4 md:py-2 rounded-md md:rounded-lg bg-gray-900/80 border border-gray-700/50 text-cyan-300 text-xs md:text-sm hover:bg-gray-900/60 transition-colors disabled:opacity-50"
+            className=" px-3 py-1 md:px-4 md:py-2 rounded-md md:rounded-lg bg-gray-900/80 border border-gray-700/50 text-cyan-300 text-xs md:text-sm hover:bg-gray-900/60 transition-colors disabled:opacity-50 cursor-pointer"
           >
             Next 
           </button>
