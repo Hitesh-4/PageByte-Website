@@ -34,7 +34,7 @@ const Navbar = ({handelSearch}) => {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50  backdrop-blur-2xl bg-gradient-to-tr from-gray-500/10 to-blue-900/90   shadow-[0_0_60px_15px_rgba(96,163,250,0.3)]">
+    <nav className="sticky top-0 z-50  backdrop-blur-2xl bg-gray-100   shadow-[0_0_60px_15px_rgba(96,163,250,0.3)]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
         <div className="flex min-h[4rem] md:min-h[5rem] items-center justify-between flex-wrap gap-y-3 gap-x-4 py-2">
           {/* Logo */}
@@ -50,12 +50,11 @@ const Navbar = ({handelSearch}) => {
                 : "transparent",
             }}
           >
-            {/* rgba(59,130,246,0.4) */}
             <div className=" rounded-xl p-2">
               <h1 className="text-lg md:text-2xl font-bold bg-gradient-to-r from-gray-900 via-gray-700 to-gray-800 bg-clip-text text-transparent animate-text-shine">
                 <a
                   href="/"
-                  className="ml-1 md:ml-2 text-shadow-[0_0_10px_rgba(96,165,250)]"
+                  className="ml-1 md:ml-2 "
                 >
                   PageByte
                 </a>

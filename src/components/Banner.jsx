@@ -6,14 +6,14 @@ import { StarIcon } from "@heroicons/react/24/outline";
 
 function Banner() {
   return (
-    <div className=" min-h-screen bg-gradient-to-bl from-gray-500/10 to-blue-900/90 relative overflow-hidden">
-      <div className=" container mx-auto px-4 h-screen flex items-center">
-        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+    <div className=" min-h-screen bg-gray-100 relative overflow-hidden ">
+      <div className=" container mx-auto px-4 h-screen flex items-center ">
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full md:mt-4">
           
           {/* TEXT CONTENT  */}
-          <div className=" lg:col-span-1 flex flex-col justify-center space-y-6">
-            <motion.p className="flex gap-2 text-lg text-black">
-              <StarIcon className=" md:h-6 md:w-6 text-amber-400 drop-shadow-glow z-10" />
+          <div className=" lg:col-span-1 flex flex-col justify-center  space-y-6">
+            <motion.p className="flex gap-2 text-lg text-black ">
+              <StarIcon className="   text-amber-400 drop-shadow-glow z-10 md:block sm:w-0 hidden  lg:w-6 lg:h-6" />
               Start your reading journey today
             </motion.p>
 
