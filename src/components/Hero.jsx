@@ -124,7 +124,7 @@ const Hero = ({ searchQuery }) => {
               <div
                 id="hero"
                 key={book.id} 
-                className=" relative bg-gray-500 rounded-xl md:rounded-2xl backdrop-blur-xl border border-white/10 hover:border-cyan-400/30 transition-all duration-300 hover:-translate-y-1 md:hover:-translate-y-2 shadow-lg hover:shadow-xl md:shadow-2xl hover:shadow-cyan-400/10"
+                className=" relative bg-gray-500 rounded-xl md:rounded-2xl backdrop-blur-xl border border-white/10 hover:border-black transition-all duration-300 hover:-translate-y-1 md:hover:-translate-y-2 shadow-lg hover:shadow-xl md:shadow-2xl hover:shadow-black"
               >
                 <a
                   href={book.infoLink}
