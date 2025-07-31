@@ -72,8 +72,6 @@ function Banner() {
           </div>
         </div>
       </div>
-
-      {/* <FloatingParticle /> */}
     </div>
   );
 }

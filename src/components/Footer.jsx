@@ -46,7 +46,7 @@ const Footer = () => {
               Power By
             </h3>
             <div className=" flex flex-wrap gap-3 justify-center sm:justify-start">
-              {["React", "Tailwind", "Vite", "GoogleAPI"].map((tech) => (
+              {["React", "Tailwind", "GoogleAPI"].map((tech) => (
                 <span
                   className=" p-3 py-1.5 cursor-pointer rounded-full bg-gray-800/50 text-gray-300 text-sm backdrop-blur-sm hover:bg-cyan-400/10 hover:text-cyan-300 transition-all"
                   key={tech}

@@ -23,7 +23,6 @@ const categories = [
 const Category = ({ onSelectCategory = () => {} }) => {
   return (
     <div className="min-h-screen pt-16 md:pt-12 bg-gray-100  p-4 sm:p-6 md:p-8">
-      {/* <div className=" border border-black m-7 p-2 rounded-lg">  */}
       <h1 className="text-4xl font-bold text-center mb-6">Categories</h1>
       <div className="max-w-7xl mx-auto ">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 p-4">
@@ -48,7 +47,6 @@ const Category = ({ onSelectCategory = () => {} }) => {
         </div>
       </div>
     </div>
-    // </div>
   );
 };
 
